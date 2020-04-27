@@ -1,0 +1,168 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Resources.XmlNode.Builder - booster</title>
+<link rel="stylesheet" href="../../../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../../../index.html">booster</a>&nbsp;/&nbsp;<a href="../../../index.html">com.didiglobal.booster.aapt2</a>&nbsp;/&nbsp;<a href="../../index.html">Resources</a>&nbsp;/&nbsp;<a href="../index.html">XmlNode</a>&nbsp;/&nbsp;<a href="./index.html">Builder</a><br/>
+<br/>
+<h1>Builder</h1>
+<code><span class="keyword">class </span><span class="identifier">Builder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Builder</span><span class="symbol">&lt;</span><span class="identifier">XmlNode</span><span class="symbol">!</span><span class="symbol">,</span>&nbsp;<span class="identifier">Builder</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier">XmlNodeOrBuilder</span></code>
+<p><pre><code>
+      Defines an abstract XmlNode that must be either an XmlElement, or
+      a text node represented by a string.
+      </code></pre> Protobuf type <code>aapt.pb.XmlNode</code></p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="clear-element.html">clearElement</a></h4>
+</td>
+<td>
+<p><code>.aapt.pb.XmlElement element = 1;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">clearElement</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-node.html">clearNode</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">clearNode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-source.html">clearSource</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Source line and column info.
+        </code></pre> <code>.aapt.pb.SourcePosition source = 3;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">clearSource</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-text.html">clearText</a></h4>
+</td>
+<td>
+<p><code>string text = 2;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">clearText</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-element.html">getElement</a></h4>
+</td>
+<td>
+<p><code>.aapt.pb.XmlElement element = 1;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getElement</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">XmlElement</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-node-case.html">getNodeCase</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getNodeCase</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">NodeCase</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-source.html">getSource</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Source line and column info.
+        </code></pre> <code>.aapt.pb.SourcePosition source = 3;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getSource</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">SourcePosition</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-text.html">getText</a></h4>
+</td>
+<td>
+<p><code>string text = 2;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getText</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-text-bytes.html">getTextBytes</a></h4>
+</td>
+<td>
+<p><code>string text = 2;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">getTextBytes</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ByteString</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="has-element.html">hasElement</a></h4>
+</td>
+<td>
+<p><code>.aapt.pb.XmlElement element = 1;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">hasElement</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="has-source.html">hasSource</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Source line and column info.
+        </code></pre> <code>.aapt.pb.SourcePosition source = 3;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">hasSource</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="merge-element.html">mergeElement</a></h4>
+</td>
+<td>
+<p><code>.aapt.pb.XmlElement element = 1;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">mergeElement</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.XmlNode.Builder$mergeElement(com.didiglobal.booster.aapt2.Resources.XmlElement)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">XmlElement</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="merge-source.html">mergeSource</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Source line and column info.
+        </code></pre> <code>.aapt.pb.SourcePosition source = 3;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">mergeSource</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.XmlNode.Builder$mergeSource(com.didiglobal.booster.aapt2.Resources.SourcePosition)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">SourcePosition</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-element.html">setElement</a></h4>
+</td>
+<td>
+<p><code>.aapt.pb.XmlElement element = 1;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">setElement</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.XmlNode.Builder$setElement(com.didiglobal.booster.aapt2.Resources.XmlElement)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">XmlElement</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setElement</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.XmlNode.Builder$setElement(com.didiglobal.booster.aapt2.Resources.XmlElement.Builder)/builderForValue">builderForValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">Builder</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-source.html">setSource</a></h4>
+</td>
+<td>
+<p><pre><code>
+        Source line and column info.
+        </code></pre> <code>.aapt.pb.SourcePosition source = 3;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">setSource</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.XmlNode.Builder$setSource(com.didiglobal.booster.aapt2.Resources.SourcePosition)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">SourcePosition</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">setSource</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.XmlNode.Builder$setSource(com.didiglobal.booster.aapt2.Resources.SourcePosition.Builder)/builderForValue">builderForValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">Builder</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-text.html">setText</a></h4>
+</td>
+<td>
+<p><code>string text = 2;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">setText</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.XmlNode.Builder$setText(kotlin.String)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-text-bytes.html">setTextBytes</a></h4>
+</td>
+<td>
+<p><code>string text = 2;</code></p>
+<code><span class="keyword">fun </span><span class="identifier">setTextBytes</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.aapt2.Resources.XmlNode.Builder$setTextBytes(com.google.protobuf.ByteString)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">ByteString</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">!</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
