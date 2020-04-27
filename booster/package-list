@@ -140,7 +140,6 @@ $dokka.location:com.didiglobal.booster.transform.util$transform(java.util.zip.Zi
 $dokka.location:com.didiglobal.booster.transform.util$transform(java.util.zip.ZipInputStream, java.io.OutputStream, kotlin.Function1((java.util.zip.ZipEntry, org.apache.commons.compress.archivers.zip.ZipArchiveEntry)), kotlin.Function1((kotlin.ByteArray, )))com.didiglobal.booster.transform.util/java.util.zip.-zip-input-stream/transform.html
 com.didiglobal.booster.aapt
 com.didiglobal.booster.aapt2
-com.didiglobal.booster.aapt2.legacy
 com.didiglobal.booster.annotations
 com.didiglobal.booster.build
 com.didiglobal.booster.cha
