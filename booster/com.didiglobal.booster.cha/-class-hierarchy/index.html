@@ -1,0 +1,91 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ClassHierarchy - booster</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">booster</a>&nbsp;/&nbsp;<a href="../index.html">com.didiglobal.booster.cha</a>&nbsp;/&nbsp;<a href="./index.html">ClassHierarchy</a><br/>
+<br/>
+<h1>ClassHierarchy</h1>
+<code><span class="keyword">class </span><span class="identifier">ClassHierarchy</span><span class="symbol">&lt;</span><span class="identifier">ClassFile</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">, </span><span class="identifier">ClassParser</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-class-file-parser/index.html"><span class="identifier">ClassFileParser</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-class-file-parser/index.html"><span class="identifier">ClassFileParser</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">&gt;</span></code>
+<p><strong>Author</strong><br/>
+johnsonlee</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">ClassHierarchy</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassHierarchy$<init>(com.didiglobal.booster.cha.ClassSet((com.didiglobal.booster.cha.ClassHierarchy.ClassFile, com.didiglobal.booster.cha.ClassHierarchy.ClassParser)), kotlin.Function1((kotlin.String, kotlin.Unit)))/classSet">classSet</span><span class="symbol">:</span>&nbsp;<a href="../-class-set/index.html"><span class="identifier">ClassSet</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">,</span>&nbsp;<span class="identifier">ClassParser</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.cha.ClassHierarchy$<init>(com.didiglobal.booster.cha.ClassSet((com.didiglobal.booster.cha.ClassHierarchy.ClassFile, com.didiglobal.booster.cha.ClassHierarchy.ClassParser)), kotlin.Function1((kotlin.String, kotlin.Unit)))/onClassResolveFailed">onClassResolveFailed</span><span class="symbol">:</span>&nbsp;<a href="../-on-class-resolve-failed.html"><span class="identifier">OnClassResolveFailed</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="classes.html">classes</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">classes</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html"><span class="identifier">Iterable</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="get.html">get</a></h4>
+</td>
+<td>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">get</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassHierarchy$get(kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ClassFile</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-derived-types.html">getDerivedTypes</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDerivedTypes</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassHierarchy$getDerivedTypes(kotlin.String, kotlin.Function2((com.didiglobal.booster.cha.ClassFileParser((com.didiglobal.booster.cha.ClassHierarchy.ClassFile)), , kotlin.Boolean)))/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.cha.ClassHierarchy$getDerivedTypes(kotlin.String, kotlin.Function2((com.didiglobal.booster.cha.ClassFileParser((com.didiglobal.booster.cha.ClassHierarchy.ClassFile)), , kotlin.Boolean)))/filter">filter</span><span class="symbol">:</span>&nbsp;<a href="../-class-file-parser/index.html"><span class="identifier">ClassFileParser</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">clazz</span><span class="symbol">:</span>&nbsp;<span class="identifier">ClassFile</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{ true }<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html"><span class="identifier">Set</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">getDerivedTypes</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassHierarchy$getDerivedTypes(com.didiglobal.booster.cha.ClassHierarchy.ClassFile, kotlin.Function2((com.didiglobal.booster.cha.ClassFileParser((com.didiglobal.booster.cha.ClassHierarchy.ClassFile)), , kotlin.Boolean)))/clazz">clazz</span><span class="symbol">:</span>&nbsp;<span class="identifier">ClassFile</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.cha.ClassHierarchy$getDerivedTypes(com.didiglobal.booster.cha.ClassHierarchy.ClassFile, kotlin.Function2((com.didiglobal.booster.cha.ClassFileParser((com.didiglobal.booster.cha.ClassHierarchy.ClassFile)), , kotlin.Boolean)))/filter">filter</span><span class="symbol">:</span>&nbsp;<a href="../-class-file-parser/index.html"><span class="identifier">ClassFileParser</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">clazz</span><span class="symbol">:</span>&nbsp;<span class="identifier">ClassFile</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{ true }<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html"><span class="identifier">Set</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-super-types.html">getSuperTypes</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getSuperTypes</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassHierarchy$getSuperTypes(kotlin.String, kotlin.Function2((com.didiglobal.booster.cha.ClassFileParser((com.didiglobal.booster.cha.ClassHierarchy.ClassFile)), , kotlin.Boolean)))/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.cha.ClassHierarchy$getSuperTypes(kotlin.String, kotlin.Function2((com.didiglobal.booster.cha.ClassFileParser((com.didiglobal.booster.cha.ClassHierarchy.ClassFile)), , kotlin.Boolean)))/filter">filter</span><span class="symbol">:</span>&nbsp;<a href="../-class-file-parser/index.html"><span class="identifier">ClassFileParser</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">clazz</span><span class="symbol">:</span>&nbsp;<span class="identifier">ClassFile</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{ true }<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html"><span class="identifier">Set</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">getSuperTypes</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassHierarchy$getSuperTypes(com.didiglobal.booster.cha.ClassHierarchy.ClassFile, kotlin.Function2((com.didiglobal.booster.cha.ClassFileParser((com.didiglobal.booster.cha.ClassHierarchy.ClassFile)), , kotlin.Boolean)))/clazz">clazz</span><span class="symbol">:</span>&nbsp;<span class="identifier">ClassFile</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.cha.ClassHierarchy$getSuperTypes(com.didiglobal.booster.cha.ClassHierarchy.ClassFile, kotlin.Function2((com.didiglobal.booster.cha.ClassFileParser((com.didiglobal.booster.cha.ClassHierarchy.ClassFile)), , kotlin.Boolean)))/filter">filter</span><span class="symbol">:</span>&nbsp;<a href="../-class-file-parser/index.html"><span class="identifier">ClassFileParser</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">&gt;</span><span class="symbol">.</span><span class="symbol">(</span><span class="identifier">clazz</span><span class="symbol">:</span>&nbsp;<span class="identifier">ClassFile</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;{ true }<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html"><span class="identifier">Set</span></a><span class="symbol">&lt;</span><span class="identifier">ClassFile</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-inherit-from.html">isInheritFrom</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isInheritFrom</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassHierarchy$isInheritFrom(com.didiglobal.booster.cha.ClassHierarchy.ClassFile, com.didiglobal.booster.cha.ClassHierarchy.ClassFile)/child">child</span><span class="symbol">:</span>&nbsp;<span class="identifier">ClassFile</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.cha.ClassHierarchy$isInheritFrom(com.didiglobal.booster.cha.ClassHierarchy.ClassFile, com.didiglobal.booster.cha.ClassHierarchy.ClassFile)/parent">parent</span><span class="symbol">:</span>&nbsp;<span class="identifier">ClassFile</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">isInheritFrom</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassHierarchy$isInheritFrom(kotlin.String, kotlin.String)/child">child</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.cha.ClassHierarchy$isInheritFrom(kotlin.String, kotlin.String)/parent">parent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">isInheritFrom</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassHierarchy$isInheritFrom(kotlin.String, com.didiglobal.booster.cha.ClassHierarchy.ClassFile)/child">child</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.cha.ClassHierarchy$isInheritFrom(kotlin.String, com.didiglobal.booster.cha.ClassHierarchy.ClassFile)/parent">parent</span><span class="symbol">:</span>&nbsp;<span class="identifier">ClassFile</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">isInheritFrom</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassHierarchy$isInheritFrom(com.didiglobal.booster.cha.ClassHierarchy.ClassFile, kotlin.String)/child">child</span><span class="symbol">:</span>&nbsp;<span class="identifier">ClassFile</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.cha.ClassHierarchy$isInheritFrom(com.didiglobal.booster.cha.ClassHierarchy.ClassFile, kotlin.String)/parent">parent</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-inherit-from-class.html">isInheritFromClass</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isInheritFromClass</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassHierarchy$isInheritFromClass(com.didiglobal.booster.cha.ClassHierarchy.ClassFile, com.didiglobal.booster.cha.ClassHierarchy.ClassFile)/child">child</span><span class="symbol">:</span>&nbsp;<span class="identifier">ClassFile</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.cha.ClassHierarchy$isInheritFromClass(com.didiglobal.booster.cha.ClassHierarchy.ClassFile, com.didiglobal.booster.cha.ClassHierarchy.ClassFile)/parent">parent</span><span class="symbol">:</span>&nbsp;<span class="identifier">ClassFile</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-inherit-from-interface.html">isInheritFromInterface</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isInheritFromInterface</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.ClassHierarchy$isInheritFromInterface(com.didiglobal.booster.cha.ClassHierarchy.ClassFile, com.didiglobal.booster.cha.ClassHierarchy.ClassFile)/child">child</span><span class="symbol">:</span>&nbsp;<span class="identifier">ClassFile</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.cha.ClassHierarchy$isInheritFromInterface(com.didiglobal.booster.cha.ClassHierarchy.ClassFile, com.didiglobal.booster.cha.ClassHierarchy.ClassFile)/parent">parent</span><span class="symbol">:</span>&nbsp;<span class="identifier">ClassFile</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

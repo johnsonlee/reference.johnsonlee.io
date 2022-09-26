@@ -1,0 +1,188 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>com.didiglobal.booster.transform.util - booster</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">booster</a>&nbsp;/&nbsp;<a href="./index.html">com.didiglobal.booster.transform.util</a><br/>
+<br/>
+<h2>Package com.didiglobal.booster.transform.util</h2>
+<p>提供了通用的字节码操作相关的实用类和扩展属性及方法</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-abstract-supervisor/index.html">AbstractSupervisor</a></h4>
+</td>
+<td>
+<p>An abstraction of <a href="../com.didiglobal.booster.transform/-supervisor.html">Supervisor</a></p>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AbstractSupervisor</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../com.didiglobal.booster.transform/-supervisor.html"><span class="identifier">Supervisor</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-arguments-parser/index.html">ArgumentsParser</a></h4>
+</td>
+<td>
+<p>Represents a parser of java method argument list</p>
+<code><span class="keyword">class </span><span class="identifier">ArgumentsParser</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-class-descriptor-supervisor/index.html">ClassDescriptorSupervisor</a></h4>
+</td>
+<td>
+<p>A supervisor for class descriptor observing</p>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ClassDescriptorSupervisor</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-abstract-supervisor/index.html"><span class="identifier">AbstractSupervisor</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-class-filter.html">ClassFilter</a></h4>
+</td>
+<td>
+<code><span class="keyword">typealias </span><span class="identifier">ClassFilter</span>&nbsp;<span class="symbol">=</span>&nbsp;<span class="symbol">(</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-class-name-supervisor/index.html">ClassNameSupervisor</a></h4>
+</td>
+<td>
+<p>A supervisor for class name observing</p>
+<code><span class="keyword">class </span><span class="identifier">ClassNameSupervisor</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-abstract-supervisor/index.html"><span class="identifier">AbstractSupervisor</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-collector.html">Collector</a></h4>
+</td>
+<td>
+<code><span class="keyword">typealias </span><span class="identifier">Collector</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="../com.didiglobal.booster.transform/-collector/index.html"><span class="identifier">Collector</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-collectors/index.html">Collectors</a></h4>
+</td>
+<td>
+<code><span class="keyword">sealed</span> <span class="keyword">class </span><span class="identifier">Collectors</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-component-handler/index.html">ComponentHandler</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ComponentHandler</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/org/xml/sax/helpers/DefaultHandler.html"><span class="identifier">DefaultHandler</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-composite-collector/index.html">CompositeCollector</a></h4>
+</td>
+<td>
+<p>Represents a composite collector</p>
+<code><span class="keyword">class </span><span class="identifier">CompositeCollector</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-collector.html"><span class="identifier">Collector</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-name-collector/index.html">NameCollector</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">NameCollector</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-collector.html"><span class="identifier">Collector</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-regex-collector/index.html">RegexCollector</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">RegexCollector</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-collector.html"><span class="identifier">Collector</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-service-supervisor/index.html">ServiceSupervisor</a></h4>
+</td>
+<td>
+<p>A supervisor for service (SPI) observing</p>
+<code><span class="keyword">class </span><span class="identifier">ServiceSupervisor</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="-abstract-supervisor/index.html"><span class="identifier">AbstractSupervisor</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html"><span class="identifier">Pair</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-transformer-class-loader/index.html">TransformerClassLoader</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">TransformerClassLoader</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html"><span class="identifier">URLClassLoader</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-transform-helper/index.html">TransformHelper</a></h4>
+</td>
+<td>
+<p>Utility class for JAR or class file transforming</p>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">TransformHelper</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Extensions for External Classes</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="java.io.-file/index.html">java.io.File</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="java.io.-input-stream/index.html">java.io.InputStream</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="java.util.zip.-zip-file/index.html">java.util.zip.ZipFile</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="java.util.zip.-zip-input-stream/index.html">java.util.zip.ZipInputStream</a></h4>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<h4><a href="kotlin.-string/index.html">kotlin.String</a></h4>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-a-t-t-r_-n-a-m-e.html">ATTR_NAME</a></h4>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">ATTR_NAME</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="collect.html">collect</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">R</span><span class="symbol">&gt;</span> <a href="../com.didiglobal.booster.transform/-transform-context/index.html"><span class="identifier">TransformContext</span></a><span class="symbol">.</span><span class="identifier">collect</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.transform.util$collect(com.didiglobal.booster.transform.TransformContext, com.didiglobal.booster.transform.Collector((com.didiglobal.booster.transform.util.collect.R)))/collector">collector</span><span class="symbol">:</span>&nbsp;<a href="-collector.html"><span class="identifier">Collector</span></a><span class="symbol">&lt;</span><span class="identifier">R</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><span class="identifier">R</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">fun </span><a href="../com.didiglobal.booster.transform/-abstract-transform-context/index.html"><span class="identifier">AbstractTransformContext</span></a><span class="symbol">.</span><span class="identifier">collect</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

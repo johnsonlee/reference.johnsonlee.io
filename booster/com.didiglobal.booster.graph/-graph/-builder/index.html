@@ -1,0 +1,75 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Graph.Builder - booster</title>
+<link rel="stylesheet" href="../../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../../index.html">booster</a>&nbsp;/&nbsp;<a href="../../index.html">com.didiglobal.booster.graph</a>&nbsp;/&nbsp;<a href="../index.html">Graph</a>&nbsp;/&nbsp;<a href="./index.html">Builder</a><br/>
+<br/>
+<h1>Builder</h1>
+<code><span class="keyword">class </span><span class="identifier">Builder</span><span class="symbol">&lt;</span><span class="identifier">N</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../-node/index.html"><span class="identifier">Node</span></a><span class="symbol">&gt;</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">Builder</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="add-edge.html">addEdge</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addEdge</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.graph.Graph.Builder$addEdge(com.didiglobal.booster.graph.Edge((com.didiglobal.booster.graph.Graph.Builder.N)))/edge">edge</span><span class="symbol">:</span>&nbsp;<a href="../../-edge/index.html"><span class="identifier">Edge</span></a><span class="symbol">&lt;</span><span class="identifier">N</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">&lt;</span><span class="identifier">N</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">addEdge</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.graph.Graph.Builder$addEdge(com.didiglobal.booster.graph.Graph.Builder.N, com.didiglobal.booster.graph.Graph.Builder.N)/from">from</span><span class="symbol">:</span>&nbsp;<span class="identifier">N</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.graph.Graph.Builder$addEdge(com.didiglobal.booster.graph.Graph.Builder.N, com.didiglobal.booster.graph.Graph.Builder.N)/to">to</span><span class="symbol">:</span>&nbsp;<span class="identifier">N</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">&lt;</span><span class="identifier">N</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="add-edges.html">addEdges</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addEdges</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.graph.Graph.Builder$addEdges(com.didiglobal.booster.graph.Graph.Builder.N, kotlin.collections.Iterable((com.didiglobal.booster.graph.Graph.Builder.N)))/from">from</span><span class="symbol">:</span>&nbsp;<span class="identifier">N</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.graph.Graph.Builder$addEdges(com.didiglobal.booster.graph.Graph.Builder.N, kotlin.collections.Iterable((com.didiglobal.booster.graph.Graph.Builder.N)))/to">to</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html"><span class="identifier">Iterable</span></a><span class="symbol">&lt;</span><span class="identifier">N</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">&lt;</span><span class="identifier">N</span><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">addEdges</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.graph.Graph.Builder$addEdges(kotlin.collections.Iterable((com.didiglobal.booster.graph.Graph.Builder.N)))/chain">chain</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html"><span class="identifier">Iterable</span></a><span class="symbol">&lt;</span><span class="identifier">N</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">&lt;</span><span class="identifier">N</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="build.html">build</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">build</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../index.html"><span class="identifier">Graph</span></a><span class="symbol">&lt;</span><span class="identifier">N</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-title.html">getTitle</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getTitle</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="has-edge.html">hasEdge</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hasEdge</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.graph.Graph.Builder$hasEdge(com.didiglobal.booster.graph.Edge((com.didiglobal.booster.graph.Graph.Builder.N)))/edge">edge</span><span class="symbol">:</span>&nbsp;<a href="../../-edge/index.html"><span class="identifier">Edge</span></a><span class="symbol">&lt;</span><span class="identifier">N</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">hasEdge</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.graph.Graph.Builder$hasEdge(com.didiglobal.booster.graph.Graph.Builder.N, com.didiglobal.booster.graph.Graph.Builder.N)/from">from</span><span class="symbol">:</span>&nbsp;<span class="identifier">N</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.graph.Graph.Builder$hasEdge(com.didiglobal.booster.graph.Graph.Builder.N, com.didiglobal.booster.graph.Graph.Builder.N)/to">to</span><span class="symbol">:</span>&nbsp;<span class="identifier">N</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-title.html">setTitle</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setTitle</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.graph.Graph.Builder$setTitle(kotlin.String)/title">title</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Builder</span><span class="symbol">&lt;</span><span class="identifier">N</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

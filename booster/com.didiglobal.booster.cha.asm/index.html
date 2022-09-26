@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>com.didiglobal.booster.cha.asm - booster</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">booster</a>&nbsp;/&nbsp;<a href="./index.html">com.didiglobal.booster.cha.asm</a><br/>
+<br/>
+<h2>Package com.didiglobal.booster.cha.asm</h2>
+<p>提供了基于 ASM 的类继承分析</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-asm-class-file-parser/index.html">AsmClassFileParser</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">AsmClassFileParser</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../com.didiglobal.booster.cha/-class-file-parser/index.html"><span class="identifier">ClassFileParser</span></a><span class="symbol">&lt;</span><span class="identifier">ClassNode</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-asm-class-set.html">AsmClassSet</a></h4>
+</td>
+<td>
+<code><span class="keyword">typealias </span><span class="identifier">AsmClassSet</span>&nbsp;<span class="symbol">=</span>&nbsp;<a href="../com.didiglobal.booster.cha/-class-set/index.html"><span class="identifier">ClassSet</span></a><span class="symbol">&lt;</span><span class="identifier">ClassNode</span><span class="symbol">,</span>&nbsp;<a href="-asm-class-file-parser/index.html"><span class="identifier">AsmClassFileParser</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-asm-class-set-cache/index.html">AsmClassSetCache</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">AsmClassSetCache</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../com.didiglobal.booster.cha/-class-set-cache/index.html"><span class="identifier">ClassSetCache</span></a><span class="symbol">&lt;</span><span class="identifier">ClassNode</span><span class="symbol">,</span>&nbsp;<a href="-asm-class-file-parser/index.html"><span class="identifier">AsmClassFileParser</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-asm-class-set-loader.html">AsmClassSetLoader</a></h4>
+</td>
+<td>
+<code><span class="keyword">typealias </span><span class="identifier">AsmClassSetLoader</span>&nbsp;<span class="symbol">=</span>&nbsp;<span class="symbol">(</span><a href="https://docs.oracle.com/javase/8/docs/api/java/net/URL.html"><span class="identifier">URL</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="-asm-class-set.html"><span class="identifier">AsmClassSet</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-progress-listener.html">ProgressListener</a></h4>
+</td>
+<td>
+<code><span class="keyword">typealias </span><span class="identifier">ProgressListener</span>&nbsp;<span class="symbol">=</span>&nbsp;<span class="symbol">(</span><span class="identifier">ClassNode</span><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">,</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html"><span class="identifier">Duration</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-reference/index.html">Reference</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Reference</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../com.didiglobal.booster.graph/-grouped-node/index.html"><span class="identifier">GroupedNode</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-reference-analyser/index.html">ReferenceAnalyser</a></h4>
+</td>
+<td>
+<p>Analyser for class reference analysing</p>
+<code><span class="keyword">class </span><span class="identifier">ReferenceAnalyser</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="from.html">from</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">ClassSet.Companion</span><span class="symbol">.</span><span class="identifier">from</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.cha.asm$from(com.didiglobal.booster.cha.ClassSet.Companion, java.io.File)/file">file</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../com.didiglobal.booster.cha/-class-set/index.html"><span class="identifier">ClassSet</span></a><span class="symbol">&lt;</span><span class="identifier">ClassNode</span><span class="symbol">,</span>&nbsp;<a href="-asm-class-file-parser/index.html"><span class="identifier">AsmClassFileParser</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,48 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DotGraph - booster</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">booster</a>&nbsp;/&nbsp;<a href="../index.html">com.didiglobal.booster.graph.dot</a>&nbsp;/&nbsp;<a href="./index.html">DotGraph</a><br/>
+<br/>
+<h1>DotGraph</h1>
+<code><span class="keyword">sealed</span> <span class="keyword">class </span><span class="identifier">DotGraph</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../com.didiglobal.booster.graph/-graph-renderer/index.html"><span class="identifier">GraphRenderer</span></a></code>
+<p>Represents the graph type</p>
+<p><strong>Author</strong><br/>
+johnsonlee</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-d-i-g-r-a-p-h/index.html">DIGRAPH</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">DIGRAPH</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">DotGraph</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-dot-options/index.html">DotOptions</a></h4>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DotOptions</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Options</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="visualize.html">visualize</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">N</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../com.didiglobal.booster.graph/-node/index.html"><span class="identifier">Node</span></a><span class="symbol">&gt;</span> <span class="identifier">visualize</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.graph.dot.DotGraph$visualize(com.didiglobal.booster.graph.Graph((com.didiglobal.booster.graph.dot.DotGraph.visualize.N)), java.io.File, com.didiglobal.booster.graph.dot.DotGraph.DotOptions, com.didiglobal.booster.command.Command, kotlin.Function1((com.didiglobal.booster.graph.Node, kotlin.String)))/graph">graph</span><span class="symbol">:</span>&nbsp;<a href="../../com.didiglobal.booster.graph/-graph/index.html"><span class="identifier">Graph</span></a><span class="symbol">&lt;</span><span class="identifier">N</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.graph.dot.DotGraph$visualize(com.didiglobal.booster.graph.Graph((com.didiglobal.booster.graph.dot.DotGraph.visualize.N)), java.io.File, com.didiglobal.booster.graph.dot.DotGraph.DotOptions, com.didiglobal.booster.command.Command, kotlin.Function1((com.didiglobal.booster.graph.Node, kotlin.String)))/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.graph.dot.DotGraph$visualize(com.didiglobal.booster.graph.Graph((com.didiglobal.booster.graph.dot.DotGraph.visualize.N)), java.io.File, com.didiglobal.booster.graph.dot.DotGraph.DotOptions, com.didiglobal.booster.command.Command, kotlin.Function1((com.didiglobal.booster.graph.Node, kotlin.String)))/options">options</span><span class="symbol">:</span>&nbsp;<span class="identifier">DotOptions</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.graph.dot.DotGraph$visualize(com.didiglobal.booster.graph.Graph((com.didiglobal.booster.graph.dot.DotGraph.visualize.N)), java.io.File, com.didiglobal.booster.graph.dot.DotGraph.DotOptions, com.didiglobal.booster.command.Command, kotlin.Function1((com.didiglobal.booster.graph.Node, kotlin.String)))/dot">dot</span><span class="symbol">:</span>&nbsp;<a href="../../com.didiglobal.booster.command/-command/index.html"><span class="identifier">Command</span></a>&nbsp;<span class="symbol">=</span>&nbsp;DOT<span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.graph.dot.DotGraph$visualize(com.didiglobal.booster.graph.Graph((com.didiglobal.booster.graph.dot.DotGraph.visualize.N)), java.io.File, com.didiglobal.booster.graph.dot.DotGraph.DotOptions, com.didiglobal.booster.command.Command, kotlin.Function1((com.didiglobal.booster.graph.Node, kotlin.String)))/prettify">prettify</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="../../com.didiglobal.booster.graph/-node/index.html"><span class="identifier">Node</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Node::toPrettyString<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">N</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../com.didiglobal.booster.graph/-node/index.html"><span class="identifier">Node</span></a><span class="symbol">&gt;</span> <span class="identifier">visualize</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.graph.dot.DotGraph$visualize(com.didiglobal.booster.graph.Graph((com.didiglobal.booster.graph.dot.DotGraph.visualize.N)), java.io.File, kotlin.String, com.didiglobal.booster.command.Command, kotlin.Function1((com.didiglobal.booster.graph.Node, kotlin.String)))/graph">graph</span><span class="symbol">:</span>&nbsp;<a href="../../com.didiglobal.booster.graph/-graph/index.html"><span class="identifier">Graph</span></a><span class="symbol">&lt;</span><span class="identifier">N</span><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.graph.dot.DotGraph$visualize(com.didiglobal.booster.graph.Graph((com.didiglobal.booster.graph.dot.DotGraph.visualize.N)), java.io.File, kotlin.String, com.didiglobal.booster.command.Command, kotlin.Function1((com.didiglobal.booster.graph.Node, kotlin.String)))/output">output</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.graph.dot.DotGraph$visualize(com.didiglobal.booster.graph.Graph((com.didiglobal.booster.graph.dot.DotGraph.visualize.N)), java.io.File, kotlin.String, com.didiglobal.booster.command.Command, kotlin.Function1((com.didiglobal.booster.graph.Node, kotlin.String)))/format">format</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;"png"<span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.graph.dot.DotGraph$visualize(com.didiglobal.booster.graph.Graph((com.didiglobal.booster.graph.dot.DotGraph.visualize.N)), java.io.File, kotlin.String, com.didiglobal.booster.command.Command, kotlin.Function1((com.didiglobal.booster.graph.Node, kotlin.String)))/dot">dot</span><span class="symbol">:</span>&nbsp;<a href="../../com.didiglobal.booster.command/-command/index.html"><span class="identifier">Command</span></a>&nbsp;<span class="symbol">=</span>&nbsp;DOT<span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.graph.dot.DotGraph$visualize(com.didiglobal.booster.graph.Graph((com.didiglobal.booster.graph.dot.DotGraph.visualize.N)), java.io.File, kotlin.String, com.didiglobal.booster.command.Command, kotlin.Function1((com.didiglobal.booster.graph.Node, kotlin.String)))/prettify">prettify</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="../../com.didiglobal.booster.graph/-node/index.html"><span class="identifier">Node</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;Node::toPrettyString<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,102 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>com.didiglobal.booster.gradle.org.gradle.api.Project - booster</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">booster</a>&nbsp;/&nbsp;<a href="../index.html">com.didiglobal.booster.gradle</a>&nbsp;/&nbsp;<a href="./index.html">org.gradle.api.Project</a><br/>
+<br/>
+<h3>Extensions for org.gradle.api.Project</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="aapt2-enabled.html">aapt2Enabled</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">Project</span><span class="symbol">.</span><s><span class="identifier">aapt2Enabled</span></s><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-android.html">getAndroid</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">BaseExtension</span><span class="symbol">&gt;</span> <span class="identifier">Project</span><span class="symbol">.</span><span class="identifier">getAndroid</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-jars.html">getJars</a></h4>
+</td>
+<td>
+<p>Returns the jar files which could be the outputs of the jar task or createFullJar task</p>
+<code><span class="keyword">fun </span><span class="identifier">Project</span><span class="symbol">.</span><span class="identifier">getJars</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.gradle$getJars(org.gradle.api.Project, com.android.build.gradle.api.BaseVariant)/variant">variant</span><span class="symbol">:</span>&nbsp;<span class="identifier">BaseVariant</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html"><span class="identifier">Set</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-jar-task-providers.html">getJarTaskProviders</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">Project</span><span class="symbol">.</span><span class="identifier">getJarTaskProviders</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.gradle$getJarTaskProviders(org.gradle.api.Project, com.android.build.gradle.api.BaseVariant)/variant">variant</span><span class="symbol">:</span>&nbsp;<span class="identifier">BaseVariant</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><span class="identifier">TaskProvider</span><span class="symbol">&lt;</span><span class="keyword">out</span>&nbsp;<span class="identifier">Task</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-property.html">getProperty</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span> <span class="identifier">Project</span><span class="symbol">.</span><span class="identifier">getProperty</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.gradle$getProperty(org.gradle.api.Project, kotlin.String, com.didiglobal.booster.gradle.getProperty.T)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.gradle$getProperty(org.gradle.api.Project, kotlin.String, com.didiglobal.booster.gradle.getProperty.T)/defaultValue">defaultValue</span><span class="symbol">:</span>&nbsp;<span class="identifier">T</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">T</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-resolved-artifact-results.html">getResolvedArtifactResults</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">Project</span><span class="symbol">.</span><span class="identifier">getResolvedArtifactResults</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.gradle$getResolvedArtifactResults(org.gradle.api.Project, kotlin.Boolean, com.android.build.gradle.api.BaseVariant)/transitive">transitive</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.gradle$getResolvedArtifactResults(org.gradle.api.Project, kotlin.Boolean, com.android.build.gradle.api.BaseVariant)/variant">variant</span><span class="symbol">:</span>&nbsp;<span class="identifier">BaseVariant</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html"><span class="identifier">Set</span></a><span class="symbol">&lt;</span><span class="identifier">ResolvedArtifactResult</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-upstream-projects.html">getUpstreamProjects</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">Project</span><span class="symbol">.</span><span class="identifier">getUpstreamProjects</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.gradle$getUpstreamProjects(org.gradle.api.Project, kotlin.Boolean, com.android.build.gradle.api.BaseVariant)/transitive">transitive</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.gradle$getUpstreamProjects(org.gradle.api.Project, kotlin.Boolean, com.android.build.gradle.api.BaseVariant)/variant">variant</span><span class="symbol">:</span>&nbsp;<span class="identifier">BaseVariant</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html"><span class="identifier">Set</span></a><span class="symbol">&lt;</span><span class="identifier">Project</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="gradle-version.html">gradleVersion</a></h4>
+</td>
+<td>
+<p>The gradle version</p>
+<code><span class="keyword">val </span><span class="identifier">Project</span><span class="symbol">.</span><span class="identifier">gradleVersion</span><span class="symbol">: </span><span class="identifier">Revision</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-aapt2-enabled.html">isAapt2Enabled</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">Project</span><span class="symbol">.</span><span class="identifier">isAapt2Enabled</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-android.html">isAndroid</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">Project</span><span class="symbol">.</span><span class="identifier">isAndroid</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-java.html">isJava</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">Project</span><span class="symbol">.</span><span class="identifier">isJava</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-java-library.html">isJavaLibrary</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">Project</span><span class="symbol">.</span><span class="identifier">isJavaLibrary</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

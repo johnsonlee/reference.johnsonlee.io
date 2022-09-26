@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>CompositeCollector - booster</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">booster</a>&nbsp;/&nbsp;<a href="../index.html">com.didiglobal.booster.transform.util</a>&nbsp;/&nbsp;<a href="./index.html">CompositeCollector</a><br/>
+<br/>
+<h1>CompositeCollector</h1>
+<code><span class="keyword">class </span><span class="identifier">CompositeCollector</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-collector.html"><span class="identifier">Collector</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Represents a composite collector</p>
+<p><strong>Author</strong><br/>
+johnsonlee</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">CompositeCollector</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="com.didiglobal.booster.transform.util.CompositeCollector$<init>(kotlin.Array((com.didiglobal.booster.transform.Collector((kotlin.Any)))))/collectors">collectors</span><span class="symbol">:</span>&nbsp;<a href="../-collector.html"><span class="identifier">Collector</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">)</span></code>
+<p>Represents a composite collector</p>
+<code><span class="identifier">CompositeCollector</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.transform.util.CompositeCollector$<init>(kotlin.collections.Iterable((com.didiglobal.booster.transform.Collector((kotlin.Any)))))/collectors">collectors</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html"><span class="identifier">Iterable</span></a><span class="symbol">&lt;</span><a href="../-collector.html"><span class="identifier">Collector</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="accept.html">accept</a></h4>
+</td>
+<td>
+<p>Determine the input is acceptable by this collector</p>
+<code><span class="keyword">fun </span><span class="identifier">accept</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.transform.util.CompositeCollector$accept(kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="collect.html">collect</a></h4>
+</td>
+<td>
+<p>Returns the collected result, a non-null result means the matched input is out-of-date.</p>
+<code><span class="keyword">fun </span><span class="identifier">collect</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.transform.util.CompositeCollector$collect(kotlin.String, kotlin.Function0((kotlin.ByteArray)))/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.transform.util.CompositeCollector$collect(kotlin.String, kotlin.Function0((kotlin.ByteArray)))/data">data</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html"><span class="identifier">ByteArray</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

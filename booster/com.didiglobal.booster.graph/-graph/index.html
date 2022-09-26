@@ -1,0 +1,95 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Graph - booster</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">booster</a>&nbsp;/&nbsp;<a href="../index.html">com.didiglobal.booster.graph</a>&nbsp;/&nbsp;<a href="./index.html">Graph</a><br/>
+<br/>
+<h1>Graph</h1>
+<code><span class="keyword">class </span><span class="identifier">Graph</span><span class="symbol">&lt;</span><span class="identifier">N</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-node/index.html"><span class="identifier">Node</span></a><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html"><span class="identifier">Iterable</span></a><span class="symbol">&lt;</span><a href="../-edge/index.html"><span class="identifier">Edge</span></a><span class="symbol">&lt;</span><span class="identifier">N</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Represents a graph</p>
+<p><strong>Author</strong><br/>
+johnsonlee</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-builder/index.html">Builder</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Builder</span><span class="symbol">&lt;</span><span class="identifier">N</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-node/index.html"><span class="identifier">Node</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="nodes.html">nodes</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">nodes</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html"><span class="identifier">Collection</span></a><span class="symbol">&lt;</span><span class="identifier">N</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="title.html">title</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">title</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="get.html">get</a></h4>
+</td>
+<td>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">get</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.graph.Graph$get(com.didiglobal.booster.graph.Graph.N)/from">from</span><span class="symbol">:</span>&nbsp;<span class="identifier">N</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html"><span class="identifier">Set</span></a><span class="symbol">&lt;</span><span class="identifier">N</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-predecessors.html">getPredecessors</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getPredecessors</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.graph.Graph$getPredecessors(com.didiglobal.booster.graph.Graph.N)/node">node</span><span class="symbol">:</span>&nbsp;<span class="identifier">N</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html"><span class="identifier">Set</span></a><span class="symbol">&lt;</span><span class="identifier">N</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-successors.html">getSuccessors</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getSuccessors</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.graph.Graph$getSuccessors(com.didiglobal.booster.graph.Graph.N)/node">node</span><span class="symbol">:</span>&nbsp;<span class="identifier">N</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html"><span class="identifier">Set</span></a><span class="symbol">&lt;</span><span class="identifier">N</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="iterator.html">iterator</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">iterator</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterator/index.html"><span class="identifier">Iterator</span></a><span class="symbol">&lt;</span><a href="../-edge/index.html"><span class="identifier">Edge</span></a><span class="symbol">&lt;</span><span class="identifier">N</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="print.html">print</a></h4>
+</td>
+<td>
+<p>Print this graph</p>
+<code><span class="keyword">fun </span><span class="identifier">print</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.graph.Graph$print(java.io.PrintWriter, kotlin.Function1((com.didiglobal.booster.graph.Graph((com.didiglobal.booster.graph.Graph.N)), kotlin.CharSequence)))/out">out</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/io/PrintWriter.html"><span class="identifier">PrintWriter</span></a>&nbsp;<span class="symbol">=</span>&nbsp;PrintWriter(System.out, true)<span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.graph.Graph$print(java.io.PrintWriter, kotlin.Function1((com.didiglobal.booster.graph.Graph((com.didiglobal.booster.graph.Graph.N)), kotlin.CharSequence)))/transform">transform</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="./index.html"><span class="identifier">Graph</span></a><span class="symbol">&lt;</span><span class="identifier">N</span><span class="symbol">&gt;</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html"><span class="identifier">CharSequence</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="reversed.html">reversed</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">reversed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Graph</span></a><span class="symbol">&lt;</span><span class="identifier">N</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

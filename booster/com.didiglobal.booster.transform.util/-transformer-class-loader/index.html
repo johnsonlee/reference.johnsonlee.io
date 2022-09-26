@@ -1,0 +1,45 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TransformerClassLoader - booster</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">booster</a>&nbsp;/&nbsp;<a href="../index.html">com.didiglobal.booster.transform.util</a>&nbsp;/&nbsp;<a href="./index.html">TransformerClassLoader</a><br/>
+<br/>
+<h1>TransformerClassLoader</h1>
+<code><span class="keyword">class </span><span class="identifier">TransformerClassLoader</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html"><span class="identifier">URLClassLoader</span></a></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">TransformerClassLoader</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.transform.util.TransformerClassLoader$<init>(java.lang.ClassLoader, kotlin.Function1((java.lang.Class((kotlin.Any)), kotlin.Boolean)), kotlin.Function1((java.lang.ClassLoader, com.didiglobal.booster.transform.Transformer)))/delegate">delegate</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassLoader.html"><span class="identifier">ClassLoader</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.transform.util.TransformerClassLoader$<init>(java.lang.ClassLoader, kotlin.Function1((java.lang.Class((kotlin.Any)), kotlin.Boolean)), kotlin.Function1((java.lang.ClassLoader, com.didiglobal.booster.transform.Transformer)))/filter">filter</span><span class="symbol">:</span>&nbsp;<a href="../-class-filter.html"><span class="identifier">ClassFilter</span></a>&nbsp;<span class="symbol">=</span>&nbsp;DEFAULT_CLASS_FILTER<span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.transform.util.TransformerClassLoader$<init>(java.lang.ClassLoader, kotlin.Function1((java.lang.Class((kotlin.Any)), kotlin.Boolean)), kotlin.Function1((java.lang.ClassLoader, com.didiglobal.booster.transform.Transformer)))/factory">factory</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassLoader.html"><span class="identifier">ClassLoader</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="../../com.didiglobal.booster.transform/-transformer/index.html"><span class="identifier">Transformer</span></a><span class="symbol">)</span></code><br/>
+<code><span class="identifier">TransformerClassLoader</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.transform.util.TransformerClassLoader$<init>(java.lang.ClassLoader, kotlin.Function1((java.lang.Class((kotlin.Any)), kotlin.Boolean)), kotlin.Function2((java.lang.ClassLoader, kotlin.collections.Iterable((com.didiglobal.booster.transform.Transformer)), )), kotlin.Array((com.didiglobal.booster.transform.Transformer)))/delegate">delegate</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassLoader.html"><span class="identifier">ClassLoader</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.transform.util.TransformerClassLoader$<init>(java.lang.ClassLoader, kotlin.Function1((java.lang.Class((kotlin.Any)), kotlin.Boolean)), kotlin.Function2((java.lang.ClassLoader, kotlin.collections.Iterable((com.didiglobal.booster.transform.Transformer)), )), kotlin.Array((com.didiglobal.booster.transform.Transformer)))/filter">filter</span><span class="symbol">:</span>&nbsp;<a href="../-class-filter.html"><span class="identifier">ClassFilter</span></a>&nbsp;<span class="symbol">=</span>&nbsp;DEFAULT_CLASS_FILTER<span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.transform.util.TransformerClassLoader$<init>(java.lang.ClassLoader, kotlin.Function1((java.lang.Class((kotlin.Any)), kotlin.Boolean)), kotlin.Function2((java.lang.ClassLoader, kotlin.collections.Iterable((com.didiglobal.booster.transform.Transformer)), )), kotlin.Array((com.didiglobal.booster.transform.Transformer)))/factory">factory</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassLoader.html"><span class="identifier">ClassLoader</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-iterable/index.html"><span class="identifier">Iterable</span></a><span class="symbol">&lt;</span><a href="../../com.didiglobal.booster.transform/-transformer/index.html"><span class="identifier">Transformer</span></a><span class="symbol">&gt;</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="../../com.didiglobal.booster.transform/-transformer/index.html"><span class="identifier">Transformer</span></a><span class="symbol">, </span><span class="keyword">vararg</span> <span class="identifier" id="com.didiglobal.booster.transform.util.TransformerClassLoader$<init>(java.lang.ClassLoader, kotlin.Function1((java.lang.Class((kotlin.Any)), kotlin.Boolean)), kotlin.Function2((java.lang.ClassLoader, kotlin.collections.Iterable((com.didiglobal.booster.transform.Transformer)), )), kotlin.Array((com.didiglobal.booster.transform.Transformer)))/transformer">transformer</span><span class="symbol">:</span>&nbsp;<a href="../../com.didiglobal.booster.transform/-transformer/index.html"><span class="identifier">Transformer</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="find-class.html">findClass</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">findClass</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.transform.util.TransformerClassLoader$findClass(kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="load-class.html">loadClass</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">loadClass</span><span class="symbol">(</span><span class="identifier" id="com.didiglobal.booster.transform.util.TransformerClassLoader$loadClass(kotlin.String, kotlin.Boolean)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.didiglobal.booster.transform.util.TransformerClassLoader$loadClass(kotlin.String, kotlin.Boolean)/resolve">resolve</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html"><span class="identifier">Class</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
